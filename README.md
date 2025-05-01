@@ -30,6 +30,7 @@ SKU: Standard B2s or D2s_v3
 
 Network: Attach to a custom VNet
 
+
 2. Assign Static Private IP
 
 Navigate to: DomainController-vm > Networking > Network Interface > IP Configurations > ipconfig1
@@ -37,6 +38,7 @@ Navigate to: DomainController-vm > Networking > Network Interface > IP Configura
 Set Private IP to Static (e.g., 10.0.0.4)
 
 ![image](https://github.com/user-attachments/assets/a96d3b20-448f-49b5-99f7-ebd934a690e1)
+
 
 
 3. Configure DNS on VNet
@@ -57,6 +59,7 @@ Open Server Manager
 
 Add AD DS and DNS Server roles
 
+
 3. Promote to Domain Controller
 
 Choose: Add a new forest
@@ -65,13 +68,15 @@ Set DSRM password (e.g., Password@123)
 
 Complete the wizard (ignore benign warnings)
 
-4. Configure DNS Forwarding
+
+Part 4. Configure DNS Forwarding
 
 Server Manager > Tools > DNS > Right-click Server > Properties > Forwarders
 
 Set DNS Forwarder: 8.8.8.8
 
-5. Verify DNS with ipconfig /all
+
+ 5. Verify DNS with ipconfig /all
 
 Confirm the DNS is set to 10.0.0.4
 
