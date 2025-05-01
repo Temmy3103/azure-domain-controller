@@ -37,7 +37,6 @@ Navigate to: DomainController-vm > Networking > Network Interface > IP Configura
 
 Set Private IP to Static (e.g., 10.0.0.4)
 
-![image](https://github.com/user-attachments/assets/a96d3b20-448f-49b5-99f7-ebd934a690e1)
 
 
 
@@ -48,6 +47,10 @@ Go to your Virtual Network > DNS Servers
 Set to Custom and enter the static IP: 10.0.0.4
 
 Save and restart the VM
+
+![image](https://github.com/user-attachments/assets/a96d3b20-448f-49b5-99f7-ebd934a690e1)
+
+
 
 ### Part 2:  Promote to Domain Controller & Configure DNS
 
@@ -89,6 +92,8 @@ Navigate to YourDomain > Users
 Create necessary users and security groups
 
 
+
+
 ### Part 4: Prepare for Microsoft Entra Connect
 
 1. In Azure
@@ -108,6 +113,8 @@ Open Server Manager > Local Server
 Create any additional users/groups in AD before sync
 
 
+
+ 
  ### Part 5: Install and Configure Entra Connect
 
 1. Download
